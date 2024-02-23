@@ -19,7 +19,7 @@ public class FormSwing5 extends JFrame{
 
 	private static final long serialVersionUID = 1L;
 	private Connection connexion; // Champ pour stocker la connexion à la base de données
-	private String[] options = {"BTS SIO1", "BTS SIO2", "BTS SAM1", "BTS SAM2", "BTS COM1", "BTS COM2", "BTS MCO1", "BTS MCO2", "BTS NDRC1", "BTS NDRC2"}; // Pour tester la liste déroulante
+	private String[] options = {"BTS SIO1", "BTS2 SIO", "BTS SAM1", "BTS SAM2", "BTS COM1", "BTS COM2", "BTS MCO1", "BTS MCO2", "BTS NDRC1", "BTS NDRC2"}; // Pour tester la liste déroulante
 	private String choix_Combo = "Valeur ?";
 	
 	public FormSwing5(Connection connection) { //constructeur 

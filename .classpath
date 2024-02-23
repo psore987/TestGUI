@@ -6,6 +6,11 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/Donnees boulot/FTP/Logiciels pour etu/ODBC/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0/mysql-connector-j-8.1.0.jar">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="lib" path="D:/Donnees boulot/FTP/Logiciels pour etu/Eclipse IDE/mariadb-java-client-1.8.0.jar">
 		<attributes>
 			<attribute name="module" value="true"/>

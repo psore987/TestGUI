@@ -8,10 +8,11 @@ public class Etudiant {
 
 	public static void ajouterEtudiant(Connection connection, String nomE, String prenomE, String idClasseE) {
 		PreparedStatement preparedStatement = null;
+		// Requête SQL avec un PreparedStatement
+		String sql = "INSERT INTO Etudiant (nomEtu, prenomEtu,idClasseEtu) VALUES (?, ?, ?)";
 
 		try {
-			// Requête SQL avec un PreparedStatement
-			String sql = "INSERT INTO Etudiant (nomEtu, prenomEtu,idClasseEtu) VALUES (?, ?, ?)";
+		
 			preparedStatement = connection.prepareStatement(sql);
 
 			// Remplacer les paramètres par les valeurs actuelles

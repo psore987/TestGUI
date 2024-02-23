@@ -1,6 +1,7 @@
 package coursSwing;
 
-import java.awt.FlowLayout;
+import java.awt.Color;
+import java.awt.Font;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -8,7 +9,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import java.awt.Color;
 
 public class FormSwing2 extends JFrame{
 
@@ -21,15 +21,22 @@ public class FormSwing2 extends JFrame{
 			this.setLocationRelativeTo(null);
 
 			JPanel panel = new JPanel();
-			panel.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5)); // Même que votre code
 			
 			JLabel titre = new JLabel("Formulaire Etudiant");
+			titre.setBounds(90, 29, 132, 19);
+			titre.setFont(new Font("Tahoma", Font.PLAIN, 15));
 			titre.setBackground(Color.LIGHT_GRAY);
 			JLabel lab1 = new JLabel("Nom :");
+			lab1.setBounds(32, 66, 48, 13);
 			JTextField nom = new JTextField(20); // Définissez une largeur pour le champ de texte
+			nom.setBounds(90, 63, 166, 19);
 			JLabel lab2 = new JLabel("Prénom :");
+			lab2.setBounds(20, 95, 72, 13);
 			JTextField prenom = new JTextField(20); // Définissez une largeur pour le champ de texte
+			prenom.setBounds(90, 92, 166, 19);
 			JButton btn_Ajouter = new JButton("Ajouter");
+			btn_Ajouter.setBounds(126, 121, 88, 21);
+			panel.setLayout(null);
 
 			panel.add(titre);
 			panel.add(lab1);

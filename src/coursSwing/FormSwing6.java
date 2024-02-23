@@ -159,7 +159,6 @@ public class FormSwing6 extends JFrame{
 			String enteredNom = nom.getText();
 			String enteredPrenom = prenom.getText();
 			String message = "Nom : " + enteredNom + "\nPrénom : " + enteredPrenom;
-			//			    JOptionPane.showMessageDialog(this, message, "Informations", JOptionPane.INFORMATION_MESSAGE);
 			System.out.println(message);
 			Etudiant.ajouterEtudiant(connexion, enteredNom, enteredPrenom,choix_Combo);
 		});  
@@ -184,4 +183,4 @@ public class FormSwing6 extends JFrame{
 		FormSwing6 form = new FormSwing6(connectionBD);
 
 	}
-}
+	}
